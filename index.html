@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carmechs Auto Mechanic</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Carmechs Logo" />
+          </i><strong>Carmechs</strong></a>
+        </div>
+        <div>
+          <a href="#services"><i class="fa-solid fa-tools"></i> Services</a>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i> Kontakt</a>
+          <a href="#used-vehicles"
+            ><i class="fa-solid fa-car"></i> Gebrauchtwagen</a
+          >
+          <a href="#new-car-order"
+            ><i class="fa-solid fa-car-side"></i> Neuwagen</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Carmechs Auto Mechanic</h1>
+      <p>Wir reparieren, warten und optimieren Ihr Fahrzeug.</p>
+      <button>Kontaktieren Sie uns</button>
+    </section>
+
+    <section id="services" class="services">
+      <div class="service-card">
+        <h2><i class="fa-solid fa-oil-can"></i> Ölwechsel</h2>
+        <p>
+          Ein regelmäßiger Ölwechsel pflegt Ihren Motor, reduziert den
+          Verschleiß und senkt den Kraftstoffverbrauch.
+        </p>
+      </div>
+      <div class="service-card">
+        <h2><i class="fa-solid fa-fan"></i> Klimaanlagen</h2>
+        <p>
+          Professionelle Wartung Ihrer Klimaanlage sorgt für optimale Leistung.
+        </p>
+      </div>
+      <div class="service-card">
+        <h2><i class="fa-solid fa-car"></i> Radwechsel & Reifenservice</h2>
+        <p>Wechseln Sie Ihre Reifen schnell und unkompliziert bei uns.</p>
+      </div>
+    </section>
+
+      <section id="partners" class="partners">
+      <h2>Unsere Partner</h2>
+      <div class="partner-logos">
+        <img src="bmw-logo.png" alt="BMW Logo">
+        <img src="audi-logo.png" alt="Audi Logo">
+        <img src="mercedes-logo.png" alt="Mercedes Logo">
+        <img src="honda-logo.png" alt="Honda Logo">
+        <img src="toyota-logo.png" alt="Toyota Logo">
+      </div>
+    </section>
+a
+    <section id="used-vehicles" class="used-vehicles">
+      <h2><i class="fa-solid fa-car"></i> Gebrauchtwagen und Motorräder</h2>
+      <form>
+        <label for="vehicle-type">Fahrzeugtyp:</label>
+        <select id="vehicle-type" name="vehicle-type">
+          <option value="car">Gebrauchtwagen</option>
+          <option value="motorcycle">Gebrauchte Motorräder</option>
+        </select>
+
+        <label for="brand">Marke:</label>
+        <select id="brand" name="brand">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Mercedes">Mercedes-Benz</option>
+          <option value="Honda">Honda</option>
+          <option value="chevrolet">Chevrolet</option>
+          <option value="landrover">Land Rover</option>
+          <option value="ford">Ford</option>
+          <option value="renault">Renault</option>
+          <option value="citroen">Citroen</option>
+          <option value="wolkswagen">Wolskwagen</option>
+        </select>
+
+        <button type="submit"><i class="fa-solid fa-search"></i> Suchen</button>
+      </form>
+    </section>
+
+    <section id="new-car-order" class="new-car-order">
+      <h2>
+        <i class="fa-solid fa-car-side"></i> Stellen Sie Ihren Neuwagen zusammen
+      </h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="surname">Familienname:</label>
+        <input type="text" id="surname" name="surname" required />
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Anschrift:</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="brand">Automarke:</label>
+        <select id="brand" name="brand">
+        <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Mercedes">Mercedes-Benz</option>
+          <option value="Honda">Honda</option>
+          <option value="chevrolet">Chevrolet</option>
+          <option value="landrover">Land Rover</option>
+          <option value="ford">Ford</option>
+          <option value="renault">Renault</option>
+          <option value="citroen">Citroen</option>
+          <option value="wolkswagen">Wolskwagen</option>
+        </select>
+
+        <label for="doors">Anzahl der Türen:</label>
+        <input type="number" id="doors" name="doors" min="2" max="5" required />
+
+        <label for="color">Farbe:</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="delivery-month">Liefermonat:</label>
+        <input type="month" id="delivery-month" name="delivery-month" />
+
+        <label>Motor:</label>
+        <input type="radio" id="petrol" name="engine" value="petrol" required />
+        <label for="petrol">Benzin</label>
+        <input
+          type="radio"
+          id="electric"
+          name="engine"
+          value="electric"
+          required
+        />
+        <label for="electric">Dizel</label>
+
+        <label for="message">Weitere Wünsche:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">
+          <i class="fa-solid fa-check-circle"></i> Bestellen
+        </button>
+      </form>
+    </section>
+
+
+    <section id="testimonials" class="testimonials">
+  <h2>Was unsere Kunden sagen</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <p>"Schneller und Guter Service"</p>
+      <h4>Markus Lehrer</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Günstiger Preis und schnell"</p>
+      <h4>Amir Bey</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Service ohne Wartezeit"</p>
+      <h4>Ein alter Freund</h4>
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Carmechs Auto Mechanic. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+          <a href="#"><i class="fa-solid fa-phone"></i> +49 123 456 789</a>
+          <a href="#"><i class="fa-solid fa-envelope"></i> info@test.de</a>
+          <a href="#"
+            ><i class="fa-solid fa-map-marker-alt"></i> Bahnhofstr 123, 12345
+            Dortmund</a
+          >
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/491234567890" class="whatsapp-icon" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+</html>
